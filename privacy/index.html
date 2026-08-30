@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — 1m</title>
+<meta name="description" content="Privacy policy for 1m, an iOS app that packages logs and code into a prompt for an LLM app on your phone. No accounts, no servers, no data collected.">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="wrap">
+
+<header class="site">
+  <a class="mark" href="../"><b>1m</b> <span>for iPhone</span></a>
+  <nav class="site">
+    <a href="../">Overview</a>
+    <a href="./" aria-current="page">Privacy Policy</a>
+    <a href="../support/">Support</a>
+  </nav>
+</header>
+
+<main>
+
+<h1>Privacy Policy</h1>
+<p class="stamp">Effective 30 August 2026 · Applies to <strong>1m</strong> for iPhone (<code>com.mobileproblemsolver.app</code>), version 1.0 onward.</p>
+
+<div class="callout">
+  <h2>The short version</h2>
+  <ul class="summary">
+    <li><strong>We collect nothing.</strong> The app has no server, no accounts, no analytics and no third-party SDKs. Nothing about you or your material is sent to us, because there is nowhere for it to be sent.</li>
+    <li><strong>Your material stays on your iPhone</strong> until you press Share yourself and choose where it goes.</li>
+    <li><strong>When you share, you are handing your content to another app you picked.</strong> From that moment that app's privacy policy applies, not this one.</li>
+    <li><strong>Redaction is a help, not a guarantee.</strong> Check what you are sending before you send it.</li>
+  </ul>
+</div>
+
+<p class="lede">1m captures logs, code or an error on your screen, prepares a prompt around it, and hands the whole package to an app you already have through the iOS share sheet. This policy explains exactly what happens to that material at every step.</p>
+
+<h2>1. Who this policy is from</h2>
+<p>1m is developed and published by Oleksandr Miahkyi, an independent developer. Throughout this policy, “we” means that developer and “the app” means 1m for iPhone. You can reach us at <a href="mailto:asoft.general.support@gmail.com">asoft.general.support@gmail.com</a>.</p>
+
+<h2>2. What we collect: nothing</h2>
+<p>The app does not collect, transmit, store or process any personal data on our behalf. This is a technical fact about how it is built rather than a promise about how we behave:</p>
+<ul>
+  <li>There is <strong>no server</strong> belonging to this app, and no backend of any kind.</li>
+  <li>The app contains <strong>no networking code of its own</strong> — no HTTP client, no web views, and not one web address anywhere in its source. It never opens a connection to us or to any third party. The only network activity is iOS acting on the app's behalf, and only ever to <strong>Apple</strong>: checking your purchase or trial with the App Store, and the two features described further down. None of it reaches a server of ours, because there is none.</li>
+  <li>There are <strong>no accounts</strong>. You never register, sign in, or give us an email address.</li>
+  <li>There is <strong>no analytics, telemetry, crash reporting or advertising</strong>, and no third-party software development kits are linked into the app at all.</li>
+  <li>There is <strong>no tracking</strong> as the App Store defines it. The app does not use the Advertising Identifier, does not present the App Tracking Transparency prompt, and does not link anything about you to data from other companies.</li>
+</ul>
+<p>The app ships with an Apple <strong>privacy manifest</strong> (<code>PrivacyInfo.xcprivacy</code>) that declares no tracking and no collected data types. Its App Store privacy label reads <strong>Data Not Collected</strong>. Those two declarations and this page are intended to say the same thing; if you ever find that they do not, please tell us and we will correct it.</p>
+
+<h2>3. What is stored on your device</h2>
+<p>Everything the app keeps stays inside its own sandboxed container on your iPhone, where no other app can read it.</p>
+<div class="tablewrap">
+<table>
+  <thead><tr><th>What</th><th>Where</th><th>How long</th></tr></thead>
+  <tbody>
+    <tr><td>Attachments for the request you are composing</td><td>Temporary storage</td><td>Until you remove them, reset the request, or iOS clears temporary files</td></tr>
+    <tr><td><strong>History</strong> — copies of requests you have prepared, with their attachments</td><td>Application Support</td><td>Until you clear it; automatically capped at the <strong>20 most recent</strong> requests and <strong>500 MB</strong> in total, oldest deleted first</td></tr>
+    <tr><td>System prompts you write yourself</td><td>Application Support</td><td>Until you delete them</td></tr>
+    <tr><td>Your settings — language, theme, share mode and switches</td><td>App preferences</td><td>Until you change them</td></tr>
+    <tr><td>Three small items recording your purchase or trial — <em>no personal data</em></td><td>iOS Keychain</td><td><strong>Survives deleting the app</strong>, by design — see below</td></tr>
+  </tbody>
+</table>
+</div>
+<p><strong>History stores the redacted version, never the original.</strong> If you chose to hide something before sharing, the copy kept on your device is the one with it already covered — painted out of the image, the PDF page or the video frame, and replaced with <code>&lt;sensitive&gt;</code> in your typed text. What you asked to hide is not written to long-term storage in the clear.</p>
+<p><strong>Deleting the app removes everything above — with three deliberate exceptions.</strong> iOS deletes the app's entire container, so your requests, attachments, prompts and settings go with it. Three small items in the iOS Keychain survive on purpose, because they are what stops reinstalling the app from silently restarting a finished free trial:</p>
+<ul>
+  <li>the date this Apple Account first downloaded the app, as reported by the App Store;</li>
+  <li>a yes/no flag recording that a valid access code was entered;</li>
+  <li>the most recent date the app has seen, which is what makes setting your device clock backwards ineffective.</li>
+</ul>
+<p><strong>None of the three contains personal data or identifies you</strong>, none is transmitted to us or to anyone else, and none is synchronised off your device. Two dates and a yes/no flag is the whole of it. You can also clear History at any time from Settings inside the app.</p>
+
+<h2>4. What happens when you share — read this one</h2>
+<p>The whole purpose of 1m is to hand your prepared request to another app. This is the only route by which anything leaves your device, and it never happens on its own:</p>
+<ul>
+  <li>Nothing is shared until <strong>you</strong> press Share and then pick a destination in the standard iOS share sheet.</li>
+  <li>The app cannot send anything automatically, silently, or in the background. It has no ability to choose a destination for you.</li>
+  <li><strong>Once you pick a destination, that app receives your content and its own privacy policy and terms govern what happens next.</strong> If the destination is a chat assistant, your material may be transmitted to and processed on that company's servers, and may be retained or used according to their policy and your settings with them.</li>
+</ul>
+<p>We have no visibility into, control over, or relationship with whatever app you choose. We are not affiliated with the makers of any destination app. <strong>Please read the privacy policy of the app you are sharing into</strong> — that is where your content actually goes.</p>
+
+<h2>5. Purchases, the free trial and access codes</h2>
+<p>1m may offer a free trial and a one-time paid unlock. Deciding which applies means asking Apple a question, so it is worth being exact about what that involves.</p>
+<ul>
+  <li><strong>Apple processes any purchase — we do not.</strong> Payment is handled entirely by the App Store under your Apple Account. We never see, receive or store your payment method, billing address, Apple Account email, or any other identifier. Apple does not give them to us.</li>
+  <li><strong>The app asks the App Store what you already own</strong>, and when this Apple Account first downloaded the app. That request is made by <strong>StoreKit</strong>, Apple's own framework, and is answered by Apple. It tells Apple nothing Apple does not already know, and the answer goes nowhere but your device.</li>
+  <li><strong>The answer is cached on your device, so the question is asked once.</strong> After that the app works offline indefinitely. It never asks you for your App Store password in order to re-check.</li>
+  <li><strong>Access codes are never stored and never transmitted.</strong> If you enter one, it is hashed on your device (SHA-256, using Apple's <strong>CryptoKit</strong>) and compared against hashes built into the app. The code you typed is not saved, not sent anywhere, and cannot be recovered from what is kept — which is only a yes/no flag saying that a valid code was entered.</li>
+</ul>
+<p>We receive no report of who bought the app, who is in a trial, or who redeemed a code. Apple gives us the same aggregated sales figures it gives every developer; that is Apple's reporting to us, not data this app collects from you.</p>
+
+<h2>6. Apple services the app uses on your behalf</h2>
+<p>The app is built entirely on Apple frameworks. Two of them can contact Apple's servers, and neither sends anything to us:</p>
+<h3>Dictation (Speech framework)</h3>
+<p>Used only while you hold the microphone button to dictate. The app <strong>requests on-device recognition whenever your language supports it</strong>, specifically so that what you dictate — often a production incident — does not leave your phone if it does not have to. Where your language has no on-device model available, iOS falls back to server-based recognition, exactly as the system keyboard's own dictation does, and the audio is processed by Apple. This is covered by <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple's Privacy Policy</a>. The app requests microphone and speech recognition permission before this can happen.</p>
+<h3>Translating your prompt (Translation framework)</h3>
+<p>Used only when you tap Translate on your own typed text. iOS may download language assets from Apple to make a language pair available. The translation itself is performed by the system. Your text is not sent to us at any point.</p>
+<h3>Checking your purchase or trial (StoreKit)</h3>
+<p>Described in section 5 above. iOS contacts the App Store to confirm what this Apple Account owns; the result is cached on your device so it happens once rather than on every launch.</p>
+<p>The app uses no other network-capable service. Text recognition, sensitive-data detection, redaction and everything else run <strong>entirely on your device</strong>.</p>
+
+<h2>7. On-device processing</h2>
+<p>These features never transmit anything anywhere:</p>
+<ul class="grid">
+  <li><b>Reading text</b>Apple's Vision framework reads text out of images, PDF pages and video frames on the device.</li>
+  <li><b>Finding sensitive data</b>Pattern rules and Apple's NaturalLanguage framework look for secrets, emails, hosts, IP addresses, paths, card numbers and names.</li>
+  <li><b>Redaction</b>Anything you leave switched on is painted into the image, PDF or video, and replaced with a marker in your text, before the file is shared.</li>
+</ul>
+
+<h2>8. What redaction can and cannot promise</h2>
+<p>The app tries to find sensitive material and cover it before you share. <strong>It is not exact, and it is not a guarantee.</strong> In the app's own words:</p>
+<div class="callout">
+<p>Neither reading the text nor finding what is sensitive in it is exact. Text can be missed on a blurry or angled picture, a secret in an unusual shape may not be recognised as one, and something harmless can be covered instead — so full removal is not guaranteed. Check every attachment and everything you have typed yourself before you share, and treat what this pass found as a help rather than as a promise.</p>
+</div>
+<p>Redaction can only cover what the app was able to read. Anything it could not open or read is reported to you as <strong>not checked</strong> rather than as clean. Archives are refused as attachments outright, because nothing in the app can read inside one. <strong>You remain responsible for what you choose to send.</strong></p>
+
+<h2>9. Permissions the app asks for</h2>
+<div class="tablewrap">
+<table>
+  <thead><tr><th>Permission</th><th>Why</th><th>Optional?</th></tr></thead>
+  <tbody>
+    <tr><td>Camera</td><td>To photograph or record the logs, code or screen you want explained</td><td>Yes — you can attach files instead</td></tr>
+    <tr><td>Microphone</td><td>Sound while recording video, and dictation into your prompt</td><td>Yes</td></tr>
+    <tr><td>Speech recognition</td><td>Turning what you dictate into text</td><td>Yes</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Each is requested by iOS the first time you use the feature, and you can withdraw any of them in the iOS Settings app at any time. <strong>The app does not request photo library access at all</strong> — choosing from your library uses Apple's out-of-process picker, which hands over only the items you select and shows the app nothing else.</p>
+
+<h2>10. Children</h2>
+<p>1m is a developer tool. It is not directed at children, and we do not knowingly collect anything from anyone — of any age — because we do not collect anything at all.</p>
+
+<h2>11. Your rights</h2>
+<p>Regulations such as the GDPR and the CCPA give you rights of access, correction, deletion and portability over personal data a company holds about you. <strong>We hold none.</strong> There is no account to close, no record to request and nothing for us to delete, because nothing ever reaches us. Data held on your own device is under your control: clear History in the app's Settings, or delete the app to remove everything at once.</p>
+<p>For material you have already shared into another app, those rights are exercised with that app's provider.</p>
+
+<h2>12. About this website</h2>
+<p>These pages are hosted on <strong>GitHub Pages</strong>. They load no fonts, scripts, images or trackers from anywhere. GitHub logs visitor IP addresses for the security of its service, as described in the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub Privacy Statement</a>. We do not receive, access or retain those logs, and we place no cookies.</p>
+
+<h2>13. Changes to this policy</h2>
+<p>If this policy changes, the effective date above changes with it and the previous wording remains in the public page history. A change that materially affects what happens to your material will also be described in the app's release notes.</p>
+
+<h2>14. Contact</h2>
+<p>Questions about this policy, or about anything the app does with your material: <a href="mailto:asoft.general.support@gmail.com">asoft.general.support@gmail.com</a>. See the <a href="../support/">support page</a> for everything else.</p>
+
+</main>
+
+<footer class="site">
+  <p><strong>1m</strong> — capture the problem, prepare the prompt, hand it over.</p>
+  <p><a href="../">Overview</a> · <a href="./">Privacy Policy</a> · <a href="../support/">Support</a></p>
+</footer>
+
+</div>
+</body>
+</html>

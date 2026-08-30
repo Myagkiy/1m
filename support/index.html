@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — 1m</title>
+<meta name="description" content="Support for 1m, an iOS app that packages logs and code into a prompt for an LLM app on your phone. Contact, requirements, limits and answers to common questions.">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="wrap">
+
+<header class="site">
+  <a class="mark" href="../"><b>1m</b> <span>for iPhone</span></a>
+  <nav class="site">
+    <a href="../">Overview</a>
+    <a href="../privacy/">Privacy Policy</a>
+    <a href="./" aria-current="page">Support</a>
+  </nav>
+</header>
+
+<main>
+
+<h1>Support</h1>
+<p class="stamp">For <strong>1m</strong> version 1.0 · Last updated 30 August 2026</p>
+
+<div class="callout">
+  <h2>Get in touch</h2>
+  <p>Email <a href="mailto:asoft.general.support@gmail.com">asoft.general.support@gmail.com</a> with a question, a bug, or a feature you want. We read every message and usually reply within a few days.</p>
+  <p><a class="cta" href="mailto:asoft.general.support@gmail.com">Email support</a></p>
+</div>
+
+<h2>What 1m does</h2>
+<p class="lede">Point your iPhone at the logs, the code or the error in front of you. 1m captures it, reads the text out of it, looks for what should not leave your phone and covers what it finds for you to review, builds a well-formed prompt around it, and hands the whole package to an LLM app you already have — in one share or sequentially, depending on the share mode you choose.</p>
+<p>There is no API key to buy, no subscription to us for tokens, and no account to create. The app prepares the request; you send it, from an app you already use on your device, and the answer comes back there.</p>
+
+<h2>Requirements</h2>
+<ul class="grid">
+  <li><b>iPhone</b>iPad is not supported in this version.</li>
+  <li><b>iOS 18.0 or later</b>Required for the built-in translation feature.</li>
+  <li><b>Portrait orientation</b>The app is designed for portrait only.</li>
+  <li><b>A destination app</b>Any app that accepts shared text, images, videos and files.</li>
+</ul>
+
+<h2>How a request works</h2>
+<ol>
+  <li><strong>Attach.</strong> Take a photo or video, choose from your library, or attach a file. You can also just type or dictate.</li>
+  <li><strong>Describe.</strong> Write your prompt, with a formatting panel, dictation and translation to hand. Pick a system prompt pattern, or none at all.</li>
+  <li><strong>Prepare.</strong> The app opens and weighs the attachments, reads the text out of them, finds and covers what looks sensitive, composes the prompt and packs the payload — showing you each pass as it runs.</li>
+  <li><strong>Review, then share.</strong> Check what was found in <em>Sensitive data</em>, read the whole assembled payload in <em>Preview → See the full payload</em>, then press Share and pick your destination.</li>
+</ol>
+
+<h2>Limits</h2>
+<div class="tablewrap">
+<table>
+  <thead><tr><th>Limit</th><th>Value</th><th>Why</th></tr></thead>
+  <tbody>
+    <tr><td>Attachments per request</td><td>5</td><td>What one share can reliably carry</td></tr>
+    <tr><td>Image size</td><td>10 MB</td><td rowspan="2">A share extension runs under a tight memory budget; a file turned away when you pick it beats a share that fails with the sheet already open</td></tr>
+    <tr><td>Video or any other file</td><td>30 MB</td></tr>
+    <tr><td>Recording in the app</td><td>15 seconds</td><td>Derived from the 30 MB video ceiling at high quality</td></tr>
+    <tr><td>Archives (.zip, .rar, .7z, …)</td><td>Not accepted</td><td>Nothing in the app can read inside an archive, so its contents could not be checked for secrets before you shared them</td></tr>
+    <tr><td>History</td><td>20 requests / 500 MB</td><td>Oldest deleted first, so the app never grows without bound</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2>Questions people ask</h2>
+
+<h3>Do I need an API key, or to pay for tokens?</h3>
+<p>No. 1m never calls an AI service itself. It prepares your request and hands it to an app on your phone through the standard iOS share sheet; that app answers using whatever plan you already have with it.</p>
+
+<h3>Where does my material actually go?</h3>
+<p>Nowhere, until you share it. The app has no server and makes no network requests of its own — capture, text recognition and redaction all run on your device. When you press Share and pick a destination, your content goes to that app, and its privacy policy applies from there. The <a href="../privacy/">privacy policy</a> sets this out in full.</p>
+
+<h3>Is the secret removal guaranteed?</h3>
+<p><strong>No, and the app says so on two screens.</strong> Text can be missed on a blurry or angled picture, a secret in an unusual shape may not be recognised, and something harmless can be covered instead. Redaction can only cover what the app could read; anything it could not open is reported as <em>not checked</em> rather than as clean. Always review before you share.</p>
+
+<h3>Why does the app want the camera and microphone?</h3>
+<p>The camera photographs or records what you want explained. The microphone records sound while you are filming, and powers the dictation button beside your prompt. Both are optional — you can attach files and type instead — and you can withdraw either in iOS Settings at any time. The app never asks for photo library access; choosing from your library uses Apple's own picker, which shows the app only what you select.</p>
+
+<h3>Text was not read out of my video</h3>
+<p>Reading text in videos is <strong>off by default</strong>, because it is much slower than reading a still. Turn on <em>Read text in videos</em> in Settings. Be aware that a long hand-held clip can take minutes to process, since almost every frame is different and each one is read.</p>
+
+<h3>Can the answer come back in my language?</h3>
+<p>Yes. <em>Reply in the app's language</em> in Settings is on by default. When the app is set to anything other than English, an extra instruction is added asking for the response in your language — while explicitly asking that code, identifiers, class and method names, error names, log lines, commands and paths are left exactly as they are, so the answer stays searchable and pasteable.</p>
+
+<h3>What languages does the app support?</h3>
+<p>English, Ukrainian, German and Russian, chosen in Settings → Appearance → Language. The three permission dialogs are drawn by iOS itself and follow your phone's language rather than this setting.</p>
+
+<h3>Dictation is not working</h3>
+<p>Hold the microphone button down — it records for as long as your finger is on it and stops when you lift it. It is not a tap-to-toggle button. Also check that microphone and speech recognition permissions are granted in iOS Settings.</p>
+
+<h3>How do I see the introduction again?</h3>
+<p>Open the ⓘ on the <em>New request</em> title line on the Main tab and tap <strong>Show the interactive introduction</strong> at the bottom.</p>
+
+<h3>How do I delete everything the app has stored?</h3>
+<p>Settings → <strong>Clear History</strong> removes stored requests and their attachments. Deleting the app removes absolutely everything, since all of it lives inside the app's own container.</p>
+
+<h2>Reporting a bug</h2>
+<p>Email <a href="mailto:asoft.general.support@gmail.com">asoft.general.support@gmail.com</a> and include, as far as you can:</p>
+<ul>
+  <li>Your iPhone model and iOS version</li>
+  <li>What you did, what you expected, and what happened instead</li>
+  <li>A screenshot, if it is something you can see</li>
+</ul>
+<p><strong>Please do not send us your logs, screenshots of production systems, keys or customer data</strong> to illustrate a problem. If a bug involves a specific attachment, describe its kind and size rather than sending it. We would rather reproduce it ourselves than receive material you would not want to share.</p>
+
+</main>
+
+<footer class="site">
+  <p><strong>1m</strong> — capture the problem, prepare the prompt, hand it over.</p>
+  <p><a href="../">Overview</a> · <a href="../privacy/">Privacy Policy</a> · <a href="./">Support</a></p>
+</footer>
+
+</div>
+</body>
+</html>
