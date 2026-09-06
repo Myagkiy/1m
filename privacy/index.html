@@ -23,7 +23,7 @@
 <main>
 
 <h1>Privacy Policy</h1>
-<p class="stamp">Effective 30 August 2026 · Applies to <strong>1m</strong> for iPhone (<code>com.mobileproblemsolver.app</code>), version 1.0 onward.</p>
+<p class="stamp">Effective 5 September 2026 · Applies to <strong>1m</strong> for iPhone (<code>com.mobileproblemsolver.app</code>), version 1.0 onward.</p>
 
 <div class="callout">
   <h2>The short version</h2>
@@ -61,18 +61,19 @@
     <tr><td><strong>History</strong> — copies of requests you have prepared, with their attachments</td><td>Application Support</td><td>Until you clear it; automatically capped at the <strong>20 most recent</strong> requests and <strong>500 MB</strong> in total, oldest deleted first</td></tr>
     <tr><td>System prompts you write yourself</td><td>Application Support</td><td>Until you delete them</td></tr>
     <tr><td>Your settings — language, theme, share mode and switches</td><td>App preferences</td><td>Until you change them</td></tr>
-    <tr><td>Three small items recording your purchase or trial — <em>no personal data</em></td><td>iOS Keychain</td><td><strong>Survives deleting the app</strong>, by design — see below</td></tr>
+    <tr><td>Four small items recording your trial or purchase — <em>no personal data</em></td><td>iOS Keychain</td><td><strong>Survives deleting the app</strong>, by design — see below</td></tr>
   </tbody>
 </table>
 </div>
 <p><strong>History stores the redacted version, never the original.</strong> If you chose to hide something before sharing, the copy kept on your device is the one with it already covered — painted out of the image, the PDF page or the video frame, and replaced with <code>&lt;sensitive&gt;</code> in your typed text. What you asked to hide is not written to long-term storage in the clear.</p>
-<p><strong>Deleting the app removes everything above — with three deliberate exceptions.</strong> iOS deletes the app's entire container, so your requests, attachments, prompts and settings go with it. Three small items in the iOS Keychain survive on purpose, because they are what stops reinstalling the app from silently restarting a finished free trial:</p>
+<p><strong>Deleting the app removes everything above — with four deliberate exceptions.</strong> iOS deletes the app's entire container, so your requests, attachments, prompts and settings go with it. Four small items in the iOS Keychain survive on purpose, because they are what stops reinstalling the app from silently restarting a finished free trial:</p>
 <ul>
+  <li>the date this app first ran on this iPhone, which is when your free trial began;</li>
   <li>the date this Apple Account first downloaded the app, as reported by the App Store;</li>
   <li>a yes/no flag recording that a valid access code was entered;</li>
   <li>the most recent date the app has seen, which is what makes setting your device clock backwards ineffective.</li>
 </ul>
-<p><strong>None of the three contains personal data or identifies you</strong>, none is transmitted to us or to anyone else, and none is synchronised off your device. Two dates and a yes/no flag is the whole of it. You can also clear History at any time from Settings inside the app.</p>
+<p><strong>None of the four contains personal data or identifies you</strong>, none is transmitted to us or to anyone else, and none is synchronised off your device. Three dates and a yes/no flag is the whole of it. You can also clear History at any time from Settings inside the app.</p>
 
 <h2>4. What happens when you share — read this one</h2>
 <p>The whole purpose of 1m is to hand your prepared request to another app. This is the only route by which anything leaves your device, and it never happens on its own:</p>
@@ -84,11 +85,14 @@
 <p>We have no visibility into, control over, or relationship with whatever app you choose. We are not affiliated with the makers of any destination app. <strong>Please read the privacy policy of the app you are sharing into</strong> — that is where your content actually goes.</p>
 
 <h2>5. Purchases, the free trial and access codes</h2>
-<p>1m may offer a free trial and a one-time paid unlock. Deciding which applies means asking Apple a question, so it is worth being exact about what that involves.</p>
+<p>1m offers a free trial and a one-time paid unlock. Deciding which applies means asking Apple a question, so it is worth being exact about what that involves.</p>
+<p><strong>The free trial runs for three days from the first time you open the app on this iPhone.</strong> It does not need an internet connection to begin, and it does not restart if you delete the app and install it again. If more than thirty days have passed since this Apple Account downloaded the app, the trial has already closed by the time you first open it; that limit is the only thing preventing the trial from being restarted indefinitely. When the trial ends the app keeps working with a reduced set of features — nothing you have already prepared is removed or made unreadable.</p>
 <ul>
   <li><strong>Apple processes any purchase — we do not.</strong> Payment is handled entirely by the App Store under your Apple Account. We never see, receive or store your payment method, billing address, Apple Account email, or any other identifier. Apple does not give them to us.</li>
   <li><strong>The app asks the App Store what you already own</strong>, and when this Apple Account first downloaded the app. That request is made by <strong>StoreKit</strong>, Apple's own framework, and is answered by Apple. It tells Apple nothing Apple does not already know, and the answer goes nowhere but your device.</li>
   <li><strong>The answer is cached on your device, so the question is asked once.</strong> After that the app works offline indefinitely. It never asks you for your App Store password in order to re-check.</li>
+  <li><strong>The unlock is a single purchase, tied to your Apple Account.</strong> It is not a subscription: there is nothing to renew and nothing to cancel. Because it belongs to your Apple Account rather than to this iPhone, it works on any device you sign in to, <strong>Restore purchases</strong> in Settings brings it back after reinstalling, and — if you turn on Family Sharing — your family members can use it. The app learns of a shared purchase in exactly the same way it learns of your own: by asking the App Store what this Apple Account is entitled to. It is never told who else is in your family, or anything about them.</li>
+  <li><strong>Refunds are requested from Apple, not from us.</strong> The button in Settings opens Apple's own refund sheet; the request goes to Apple, who decide. We have no role in approving or refusing one, and we are not told the reason you gave. If a refund is granted, the app simply stops seeing the purchase and returns to its reduced set of features.</li>
   <li><strong>Access codes are never stored and never transmitted.</strong> If you enter one, it is hashed on your device (SHA-256, using Apple's <strong>CryptoKit</strong>) and compared against hashes built into the app. The code you typed is not saved, not sent anywhere, and cannot be recovered from what is kept — which is only a yes/no flag saying that a valid code was entered.</li>
 </ul>
 <p>We receive no report of who bought the app, who is in a trial, or who redeemed a code. Apple gives us the same aggregated sales figures it gives every developer; that is Apple's reporting to us, not data this app collects from you.</p>
