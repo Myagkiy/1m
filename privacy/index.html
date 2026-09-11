@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy — 1m</title>
-<meta name="description" content="Privacy policy for 1m, an iOS app that packages logs and code into a prompt for an LLM app on your phone. No accounts, no servers, no data collected.">
+<title>Privacy Policy — 1m: Private Prompt Composer</title>
+<meta name="description" content="Privacy policy for 1m, an iOS app that packages logs and code into a prompt for an LLM app on your phone. No accounts, no servers, nothing collected automatically.">
 <meta name="color-scheme" content="light dark">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
@@ -23,13 +23,13 @@
 <main>
 
 <h1>Privacy Policy</h1>
-<p class="stamp">Effective 5 September 2026 · Applies to <strong>1m</strong> for iPhone (<code>com.mobileproblemsolver.app</code>), version 1.0 onward.</p>
+<p class="stamp">Effective 11 September 2026 · Last updated 11 September 2026 · Applies to <strong>1m: Private Prompt Composer</strong> for iPhone (<code>com.mobileproblemsolver.app</code>), version 1.0 onward.</p>
 
 <div class="callout">
   <h2>The short version</h2>
   <ul class="summary">
-    <li><strong>We collect nothing.</strong> The app has no server, no accounts, no analytics and no third-party SDKs. Nothing about you or your material is sent to us, because there is nowhere for it to be sent.</li>
-    <li><strong>Your material stays on your iPhone</strong> until you press Share yourself and choose where it goes.</li>
+    <li><strong>We collect nothing automatically.</strong> The app has no server, no accounts, no analytics and no third-party SDKs. The only way anything about you reaches us is if you write to us yourself, from your own mail app.</li>
+    <li><strong>Your material stays on your iPhone</strong> — and in whatever backups you make of it — until you press Share yourself and choose where it goes.</li>
     <li><strong>When you share, you are handing your content to another app you picked.</strong> From that moment that app's privacy policy applies, not this one.</li>
     <li><strong>Redaction is a help, not a guarantee.</strong> Check what you are sending before you send it.</li>
   </ul>
@@ -38,42 +38,48 @@
 <p class="lede">1m captures logs, code or an error on your screen, prepares a prompt around it, and hands the whole package to an app you already have through the iOS share sheet. This policy explains exactly what happens to that material at every step.</p>
 
 <h2>1. Who this policy is from</h2>
-<p>1m is developed and published by Oleksandr Miahkyi, an independent developer. Throughout this policy, “we” means that developer and “the app” means 1m for iPhone. You can reach us at <a href="mailto:asoft.general.support@gmail.com">asoft.general.support@gmail.com</a>.</p>
+<p><strong>1m: Private Prompt Composer</strong> — <strong>1m</strong> for short — is developed and published by Oleksandr Miahkyi, an independent developer. Throughout this policy, “we” means that developer and “the app” means 1m for iPhone. You can reach us at <a href="mailto:asoft.general.support@gmail.com">asoft.general.support@gmail.com</a>.</p>
 
-<h2>2. What we collect: nothing</h2>
-<p>The app does not collect, transmit, store or process any personal data on our behalf. This is a technical fact about how it is built rather than a promise about how we behave:</p>
+<h2>2. What we collect</h2>
+<p><strong>Nothing automatically.</strong> The app does not collect, transmit, store or process any personal data on our behalf. This is a technical fact about how it is built rather than a promise about how we behave:</p>
 <ul>
   <li>There is <strong>no server</strong> belonging to this app, and no backend of any kind.</li>
-  <li>The app contains <strong>no networking code of its own</strong> — no HTTP client, no web views, and not one web address anywhere in its source. It never opens a connection to us or to any third party. The only network activity is iOS acting on the app's behalf, and only ever to <strong>Apple</strong>: checking your purchase or trial with the App Store, and the two features described further down. None of it reaches a server of ours, because there is none.</li>
-  <li>There are <strong>no accounts</strong>. You never register, sign in, or give us an email address.</li>
+  <li>The app has <strong>no networking code of its own</strong> — no HTTP client, no web views, and no connection it opens to us or to any third party. It does contain three addresses, and all three are there for you to open deliberately from Settings: this privacy page, the support page, and a <code>mailto:</code> draft. Opening one hands it to Safari or to your mail app — 1m itself still makes no connection, and section 12 covers what a browser loading these pages involves. Everything else on the network is iOS acting on the app's behalf, and only ever to <strong>Apple</strong> — described in sections 5 and 6.</li>
+  <li>There are <strong>no accounts</strong>. You never register or sign in, and the app never asks you for an email address.</li>
   <li>There is <strong>no analytics, telemetry, crash reporting or advertising</strong>, and no third-party software development kits are linked into the app at all.</li>
   <li>There is <strong>no tracking</strong> as the App Store defines it. The app does not use the Advertising Identifier, does not present the App Tracking Transparency prompt, and does not link anything about you to data from other companies.</li>
 </ul>
-<p>The app ships with an Apple <strong>privacy manifest</strong> (<code>PrivacyInfo.xcprivacy</code>) that declares no tracking and no collected data types. Its App Store privacy label reads <strong>Data Not Collected</strong>. Those two declarations and this page are intended to say the same thing; if you ever find that they do not, please tell us and we will correct it.</p>
+<p>The app ships with an Apple <strong>privacy manifest</strong> (<code>PrivacyInfo.xcprivacy</code>) that declares no tracking and no collected data types. Its App Store privacy label reads <strong>Data Not Collected</strong>. A support message you choose to write is not part of that label: Apple's own guidance leaves out contact details a person voluntarily sends for customer service, and an email composed in your mail app is not something this app collects. Those declarations and this page are intended to say the same thing; if you ever find that they do not, please tell us and we will correct it.</p>
+
+<h3>If you write to us</h3>
+<p>Settings has a <strong>Report a problem</strong> row, available while you have full access or an active trial. It opens <strong>your own mail app</strong> on a prepared draft addressed to our support address, with the app version in the subject, one sentence asking you to describe the problem, and four technical lines: app version, iOS version, device model identifier (something like <code>iPhone17,1</code>) and the language the app is set to. There is no account name, no identifier of yours, no logs, no attachments and nothing from any request in it.</p>
+<p><strong>The app sends nothing.</strong> The draft sits in your Drafts until you press send, and every line of it can be read, edited or deleted first — which is exactly why those four lines are in the body rather than attached. If no mail app will take the draft, the address is copied to your clipboard instead and the app tells you so. The <a href="../support/">support page</a> is open to anyone, whether or not the app is unlocked.</p>
+<p>If you do send a message, we receive what you wrote and the address you sent it from, as with any email. It arrives in a personal mailbox read by the developer and is used only to answer you and follow the problem up. It is not shared, not used for marketing, and not fed into anything else. Kept only for as long as answering and following up requires; ask us and we will delete the thread.</p>
 
 <h2>3. What is stored on your device</h2>
-<p>Everything the app keeps stays inside its own sandboxed container on your iPhone, where no other app can read it.</p>
+<p>Everything the app keeps stays inside its own sandboxed container on your iPhone, where no other app can read it. There is no synchronisation of any kind — nothing is copied to a server of ours, because there is none. What can leave the container is a backup you make yourself, described below.</p>
 <div class="tablewrap">
 <table>
   <thead><tr><th>What</th><th>Where</th><th>How long</th></tr></thead>
   <tbody>
     <tr><td>Attachments for the request you are composing</td><td>Temporary storage</td><td>Until you remove them, reset the request, or iOS clears temporary files</td></tr>
-    <tr><td><strong>History</strong> — copies of requests you have prepared, with their attachments</td><td>Application Support</td><td>Until you clear it; automatically capped at the <strong>20 most recent</strong> requests and <strong>500 MB</strong> in total, oldest deleted first</td></tr>
+    <tr><td><strong>History</strong> — copies of requests you have prepared, with their attachments</td><td>Application Support</td><td>Until you clear it; kept to the <strong>20 most recent</strong> requests and <strong>500 MB of attachments</strong> between them, oldest deleted first</td></tr>
     <tr><td>System prompts you write yourself</td><td>Application Support</td><td>Until you delete them</td></tr>
     <tr><td>Your settings — language, theme, share mode and switches</td><td>App preferences</td><td>Until you change them</td></tr>
-    <tr><td>Four small items recording your trial or purchase — <em>no personal data</em></td><td>iOS Keychain</td><td><strong>Survives deleting the app</strong>, by design — see below</td></tr>
+    <tr><td>One date recording the trial clock — <em>no personal data</em></td><td>iOS Keychain</td><td>Written only once you activate a trial; <strong>survives deleting the app</strong> — see below</td></tr>
   </tbody>
 </table>
 </div>
-<p><strong>History stores the redacted version, never the original.</strong> If you chose to hide something before sharing, the copy kept on your device is the one with it already covered — painted out of the image, the PDF page or the video frame, and replaced with <code>&lt;sensitive&gt;</code> in your typed text. What you asked to hide is not written to long-term storage in the clear.</p>
-<p><strong>Deleting the app removes everything above — with four deliberate exceptions.</strong> iOS deletes the app's entire container, so your requests, attachments, prompts and settings go with it. Four small items in the iOS Keychain survive on purpose, because they are what stops reinstalling the app from silently restarting a finished free trial:</p>
+<p>The 500 MB counts the attachments themselves. The small index beside them, the text read out of them and the recovery copy described below sit outside that sum, so it bounds what History keeps rather than everything the app has on disk.</p>
+<p><strong>History stores what was shared, not what you started from.</strong> Anything you chose to hide is already covered in the copy kept on your device — painted out of the image, the PDF page or the video frame, and replaced with <code>&lt;sensitive&gt;</code> in your typed text. An attachment where you hid nothing is kept exactly as you attached it, because that is also what was shared. A request reaches History when preparation finishes, so an attempt you cancelled or that failed leaves nothing behind.</p>
+<p><strong>If History's index cannot be read</strong> — a truncated write, a damaged restore — the app does not treat that as an empty History and start writing over it. It stops, shows you a recovery screen, leaves every file exactly where it is, and refuses to write anything until the matter is settled. A small copy of the previous index is kept beside the current one, and the app rebuilds from it automatically at launch whenever that copy and the files it names are intact — so the recovery screen is what you see when even that did not work. That copy never holds a request you deleted, and Clear History removes it along with everything else.</p>
+<p><strong>Your own backups are the ordinary way this material leaves the phone.</strong> History lives in Application Support, which iOS includes in an iCloud backup and in an encrypted backup to your computer, and the app deliberately does not exclude it: a History lost with a broken phone is worse than a History riding along in a backup you already trust. Those backups are between you and Apple. We cannot see them and there is nothing in them for us to see. If you would rather History were not in them, clear History before you back up, or switch the app off in the iCloud backup list in iOS Settings.</p>
+<p><strong>Deleting the app removes its container — and two things sit outside it.</strong> iOS deletes everything in the table above along with the app: your requests, their attachments, the prompts you wrote and your settings.</p>
 <ul>
-  <li>the date this app first ran on this iPhone, which is when your free trial began;</li>
-  <li>the date this Apple Account first downloaded the app, as reported by the App Store;</li>
-  <li>a yes/no flag recording that a valid access code was entered;</li>
-  <li>the most recent date the app has seen, which is what makes setting your device clock backwards ineffective.</li>
+  <li><strong>One item in the iOS Keychain.</strong> Once you have activated a trial, the app keeps a single date there — the latest moment it has seen — which is what makes setting your device clock backwards ineffective. One date: no personal data, nothing that identifies you, never transmitted to us or to anyone else, and not synced through iCloud Keychain — though, like other Keychain items, it can travel in an encrypted backup you make yourself. If you never activate a trial, the app writes nothing to the Keychain at all. Earlier versions kept a few similar items; this version no longer writes them, and reads one of them only to tell you that a code you redeemed before now needs an Apple offer code to replace it.</li>
+  <li><strong>What Apple remembers.</strong> Your purchase, and the fact that you activated the trial, belong to your Apple Account and live in Apple's own records rather than in this app's container. That is why <strong>Restore purchases</strong> can bring a purchase back, and why reinstalling does not hand you a fresh trial. What Apple holds is between you and Apple; it is not ours to remove, and we are not shown it.</li>
 </ul>
-<p><strong>None of the four contains personal data or identifies you</strong>, none is transmitted to us or to anyone else, and none is synchronised off your device. Three dates and a yes/no flag is the whole of it. You can also clear History at any time from Settings inside the app.</p>
+<p>A backup you made earlier can also still hold History after the app itself is gone. And <strong>Clear History</strong>, in the app's Settings, deletes saved requests, their attachments and that recovery copy — it does not touch your settings or the system prompts you wrote, which go when you delete them or when you delete the app.</p>
 
 <h2>4. What happens when you share — read this one</h2>
 <p>The whole purpose of 1m is to hand your prepared request to another app. This is the only route by which anything leaves your device, and it never happens on its own:</p>
@@ -83,34 +89,36 @@
   <li><strong>Once you pick a destination, that app receives your content and its own privacy policy and terms govern what happens next.</strong> If the destination is a chat assistant, your material may be transmitted to and processed on that company's servers, and may be retained or used according to their policy and your settings with them.</li>
 </ul>
 <p>We have no visibility into, control over, or relationship with whatever app you choose. We are not affiliated with the makers of any destination app. <strong>Please read the privacy policy of the app you are sharing into</strong> — that is where your content actually goes.</p>
+<p>One rough edge worth knowing about, because it looks worse than it is: after handing a request over, coming back to 1m can sometimes leave it unresponsive. We have not confirmed the cause. Closing 1m from the app switcher and opening it again recovers it, and requests that finished preparing are in History — one that never finished preparing may not be.</p>
 
-<h2>5. Purchases, the free trial and access codes</h2>
-<p>1m offers a free trial and a one-time paid unlock. Deciding which applies means asking Apple a question, so it is worth being exact about what that involves.</p>
-<p><strong>The free trial runs for three days from the first time you open the app on this iPhone.</strong> It does not need an internet connection to begin, and it does not restart if you delete the app and install it again. If more than thirty days have passed since this Apple Account downloaded the app, the trial has already closed by the time you first open it; that limit is the only thing preventing the trial from being restarted indefinitely. When the trial ends the app keeps working with a reduced set of features — nothing you have already prepared is removed or made unreadable.</p>
+<h2>5. Purchases, the free trial and offer codes</h2>
+<p>1m works in a reduced form with no payment at all. Two things open the rest of it: an optional free three-day trial you start yourself, and a one-time purchase. Apple handles both, so it is worth being exact about what that involves.</p>
+<p><strong>The free trial does not start on its own.</strong> It is a free item in the App Store, and it begins only when you tap <strong>Start 3-day trial — Free</strong> and Apple returns a completed, verified transaction. Opening the app does not start it. Dismissing the paywall does not start it. Activating needs a working connection to the App Store twice over — once to fetch the item, once to complete it — and nothing is charged, so there is nothing to cancel and no subscription to end.</p>
+<p>It then runs for <strong>72 hours from the moment of that transaction</strong>, and the clock does not pause while the app is closed. Because the deadline belongs to the transaction, deleting the app and installing it again does not give you a second trial: what the app reads is Apple's record of what your Apple Account owns, not anything it kept for itself. A trial shared with you through Family Sharing is ignored — only your own activation counts. When the trial ends the app keeps working with a reduced set of features, and nothing you have already prepared is removed or made unreadable.</p>
 <ul>
   <li><strong>Apple processes any purchase — we do not.</strong> Payment is handled entirely by the App Store under your Apple Account. We never see, receive or store your payment method, billing address, Apple Account email, or any other identifier. Apple does not give them to us.</li>
-  <li><strong>The app asks the App Store what you already own</strong>, and when this Apple Account first downloaded the app. That request is made by <strong>StoreKit</strong>, Apple's own framework, and is answered by Apple. It tells Apple nothing Apple does not already know, and the answer goes nowhere but your device.</li>
-  <li><strong>The answer is cached on your device, so the question is asked once.</strong> After that the app works offline indefinitely. It never asks you for your App Store password in order to re-check.</li>
-  <li><strong>The unlock is a single purchase, tied to your Apple Account.</strong> It is not a subscription: there is nothing to renew and nothing to cancel. Because it belongs to your Apple Account rather than to this iPhone, it works on any device you sign in to, <strong>Restore purchases</strong> in Settings brings it back after reinstalling, and — if you turn on Family Sharing — your family members can use it. The app learns of a shared purchase in exactly the same way it learns of your own: by asking the App Store what this Apple Account is entitled to. It is never told who else is in your family, or anything about them.</li>
+  <li><strong>The app asks the App Store what this Apple Account owns.</strong> That question is asked by <strong>StoreKit</strong>, Apple's own framework, and answered by Apple. It tells Apple nothing Apple does not already know, and the answer goes nowhere but your device.</li>
+  <li><strong>Ownership is re-read, not settled at first launch.</strong> The app checks what you own each time it launches and each time it returns to the foreground, and it listens while it runs for changes Apple sends — a purchase made on another device, an Ask to Buy approval, a refund. Those checks are answered from the copy of your transactions iOS already holds on the device, so an app you own keeps working offline. Starting a trial, buying, redeeming a code and <strong>Restore purchases</strong> each need a connection, and Restore may ask you to authenticate with the App Store.</li>
+  <li><strong>The unlock is a single purchase, tied to your Apple Account.</strong> It is not a subscription: there is nothing to renew, nothing to cancel and no automatic charge. Because it belongs to your Apple Account rather than to this iPhone, it works on any device you sign in to, <strong>Restore purchases</strong> in Settings brings it back after reinstalling, and — if you turn on Family Sharing — your family members can use it. The app learns of a shared purchase in exactly the same way it learns of your own: by asking the App Store what this Apple Account is entitled to. It is never told who else is in your family, or anything about them. The price you see is the one Apple reports for your storefront; it is never written into the app.</li>
   <li><strong>Refunds are requested from Apple, not from us.</strong> The button in Settings opens Apple's own refund sheet; the request goes to Apple, who decide. We have no role in approving or refusing one, and we are not told the reason you gave. If a refund is granted, the app simply stops seeing the purchase and returns to its reduced set of features.</li>
-  <li><strong>Access codes are never stored and never transmitted.</strong> If you enter one, it is hashed on your device (SHA-256, using Apple's <strong>CryptoKit</strong>) and compared against hashes built into the app. The code you typed is not saved, not sent anywhere, and cannot be recovered from what is kept — which is only a yes/no flag saying that a valid code was entered.</li>
+  <li><strong>Offer codes are redeemed with Apple, not with us.</strong> The app does not check codes itself — it opens <strong>Apple's own redemption sheet</strong>. You type the code there, Apple decides whether it is valid, and access follows from the ownership Apple then reports. We never see the code you typed and the app stores nothing about it. If you redeemed a code in an earlier version, which did check codes on the device, the app reads that old yes/no flag once — only to tell you that it no longer grants access on its own and that you should ask for an Apple offer code to replace it. It never writes that flag again, and the flag itself was never the code: the code you typed was hashed and discarded even then.</li>
 </ul>
 <p>We receive no report of who bought the app, who is in a trial, or who redeemed a code. Apple gives us the same aggregated sales figures it gives every developer; that is Apple's reporting to us, not data this app collects from you.</p>
 
 <h2>6. Apple services the app uses on your behalf</h2>
-<p>The app is built entirely on Apple frameworks. Two of them can contact Apple's servers, and neither sends anything to us:</p>
+<p>The app is built entirely on Apple frameworks. Three of them can reach Apple's servers on your behalf, and none of them sends anything to us:</p>
 <h3>Dictation (Speech framework)</h3>
 <p>Used only while you hold the microphone button to dictate. The app <strong>requests on-device recognition whenever your language supports it</strong>, specifically so that what you dictate — often a production incident — does not leave your phone if it does not have to. Where your language has no on-device model available, iOS falls back to server-based recognition, exactly as the system keyboard's own dictation does, and the audio is processed by Apple. This is covered by <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple's Privacy Policy</a>. The app requests microphone and speech recognition permission before this can happen.</p>
 <h3>Translating your prompt (Translation framework)</h3>
 <p>Used only when you tap Translate on your own typed text. iOS may download language assets from Apple to make a language pair available. The translation itself is performed by the system. Your text is not sent to us at any point.</p>
 <h3>Checking your purchase or trial (StoreKit)</h3>
-<p>Described in section 5 above. iOS contacts the App Store to confirm what this Apple Account owns; the result is cached on your device so it happens once rather than on every launch.</p>
-<p>The app uses no other network-capable service. Text recognition, sensitive-data detection, redaction and everything else run <strong>entirely on your device</strong>.</p>
+<p>Described in section 5 above. The app reads what this Apple Account owns at every launch and every return to the foreground, and those reads are served from the transactions iOS keeps on the device, so they work with no connection. Fetching the trial or the unlock from the store, activating, buying, redeeming a code and restoring all go to Apple over the network. Apple is told nothing about you that it does not already know, and we are told nothing at all.</p>
+<p>The app uses no other network-capable service of its own. Text recognition, sensitive-data detection, redaction and everything else run <strong>entirely on your device</strong>.</p>
 
 <h2>7. On-device processing</h2>
 <p>These features never transmit anything anywhere:</p>
 <ul class="grid">
-  <li><b>Reading text</b>Apple's Vision framework reads text out of images, PDF pages and video frames on the device.</li>
+  <li><b>Reading text</b>Apple's Vision framework reads text out of images, PDF pages and — if you switch it on in Settings — video frames, on the device.</li>
   <li><b>Finding sensitive data</b>Pattern rules and Apple's NaturalLanguage framework look for secrets, emails, hosts, IP addresses, paths, card numbers and names.</li>
   <li><b>Redaction</b>Anything you leave switched on is painted into the image, PDF or video, and replaced with a marker in your text, before the file is shared.</li>
 </ul>
@@ -120,7 +128,16 @@
 <div class="callout">
 <p>Neither reading the text nor finding what is sensitive in it is exact. Text can be missed on a blurry or angled picture, a secret in an unusual shape may not be recognised as one, and something harmless can be covered instead — so full removal is not guaranteed. Check every attachment and everything you have typed yourself before you share, and treat what this pass found as a help rather than as a promise.</p>
 </div>
-<p>Redaction can only cover what the app was able to read. Anything it could not open or read is reported to you as <strong>not checked</strong> rather than as clean. Archives are refused as attachments outright, because nothing in the app can read inside one. <strong>You remain responsible for what you choose to send.</strong></p>
+<p>Redaction can only cover what the app was able to read, and there are places where the reading stops:</p>
+<ul>
+  <li><strong>A PDF is read for its first 20 pages.</strong> Anything after page 20 is never read, so nothing on it can be found or covered.</li>
+  <li><strong>A PDF page that already carries text</strong> is read from that text rather than from the picture, which is exact — but words that exist only inside an image on that same page can be missed.</li>
+  <li><strong>Video frames are read only if you turn that on in Settings</strong>, and the walk through a clip stops after 3,600 frames, so a long recording may not be read to the end. <strong>Sound is never examined</strong>: a password spoken aloud in a recording is shared exactly as recorded.</li>
+  <li><strong>A text file is scanned only if it is under 512,000 bytes.</strong> A larger one is not partly scanned — it is reported to you as <em>not checked</em>, and shared exactly as it is.</li>
+  <li><strong>Marking something yourself works on the text the app managed to read.</strong> What was never read cannot be selected, and so cannot be covered.</li>
+  <li><strong>File names and whatever metadata a file carries</strong> are not examined and not changed. The one exception is deliberate: when covering something forces the app to re-encode a picture, the copy it shares is renamed to match what it now is — <code>screenshot.png</code> becomes <code>screenshot.jpeg</code> — so the file the other app receives is never mislabelled.</li>
+</ul>
+<p><strong>In every one of those cases the attachment is still shared in full.</strong> Unread is not the same as removed. Anything the app could not open or read at all is reported to you as <strong>not checked</strong> rather than as clean, and archives are refused as attachments outright, because nothing in the app can read inside one. <strong>You remain responsible for what you choose to send.</strong></p>
 
 <h2>9. Permissions the app asks for</h2>
 <div class="tablewrap">
@@ -136,10 +153,10 @@
 <p>Each is requested by iOS the first time you use the feature, and you can withdraw any of them in the iOS Settings app at any time. <strong>The app does not request photo library access at all</strong> — choosing from your library uses Apple's out-of-process picker, which hands over only the items you select and shows the app nothing else.</p>
 
 <h2>10. Children</h2>
-<p>1m is a developer tool. It is not directed at children, and we do not knowingly collect anything from anyone — of any age — because we do not collect anything at all.</p>
+<p>1m is a developer tool. It is not directed at children, and the app collects nothing from anyone of any age. The only thing that ever reaches us is a support message somebody chose to write.</p>
 
 <h2>11. Your rights</h2>
-<p>Regulations such as the GDPR and the CCPA give you rights of access, correction, deletion and portability over personal data a company holds about you. <strong>We hold none.</strong> There is no account to close, no record to request and nothing for us to delete, because nothing ever reaches us. Data held on your own device is under your control: clear History in the app's Settings, or delete the app to remove everything at once.</p>
+<p>Regulations such as the GDPR and the CCPA give you rights of access, correction, deletion and portability over personal data a company holds about you. <strong>We hold none of it</strong> unless you have written to us, in which case we hold that message and the address it came from; reply and ask, and we will delete the thread. There is no account to close and no profile to request, because nothing reaches us on its own. Data held on your own device is under your control: clear History in the app's Settings, or delete the app to remove its container all at once — remembering that a backup you already made may still contain it, and that what Apple records about your purchase or trial is held by Apple rather than by us.</p>
 <p>For material you have already shared into another app, those rights are exercised with that app's provider.</p>
 
 <h2>12. About this website</h2>

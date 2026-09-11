@@ -135,6 +135,9 @@ code {
   border-radius: 4px;
   padding: .12em .38em;
   color: var(--ink);
+  /* An identifier has no spaces in it, and a phone is 375px wide. Without this a single long
+     token widens the whole page and the body scrolls sideways. */
+  overflow-wrap: anywhere;
 }
 
 /* ---- pieces ------------------------------------------------------------ */

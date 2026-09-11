@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Support — 1m</title>
-<meta name="description" content="Support for 1m, an iOS app that packages logs and code into a prompt for an LLM app on your phone. Contact, requirements, limits and answers to common questions.">
+<title>Support — 1m: Private Prompt Composer</title>
+<meta name="description" content="Support for 1m: Private Prompt Composer, an iOS app that packages logs and code into a prompt for an AI app you already have on your phone. Contact, access and pricing, requirements, limits, known issues and answers to common questions.">
 <meta name="color-scheme" content="light dark">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
@@ -23,7 +23,7 @@
 <main>
 
 <h1>Support</h1>
-<p class="stamp">For <strong>1m</strong> version 1.0 · Last updated 5 September 2026</p>
+<p class="stamp">For <strong>1m: Private Prompt Composer</strong> version 1.0 · Last updated 11 September 2026</p>
 
 <div class="callout">
   <h2>Get in touch</h2>
@@ -32,7 +32,7 @@
 </div>
 
 <h2>What 1m does</h2>
-<p class="lede">Point your iPhone at the logs, the code or the error in front of you. 1m captures it, reads the text out of it, looks for what should not leave your phone and covers what it finds for you to review, builds a well-formed prompt around it, and hands the whole package to an LLM app you already have — in one share or sequentially, depending on the share mode you choose.</p>
+<p class="lede">Point your iPhone at the logs, the code or the error in front of you. <strong>1m: Private Prompt Composer</strong> captures it, reads the text out of it, looks for what should not leave your phone and covers what it finds for you to review, builds a well-formed prompt around it, and hands the whole package to an AI app you already have — in one share or sequentially, depending on the share mode you choose.</p>
 <p>There is no API key to buy, no subscription to us for tokens, and no account to create. The app prepares the request; you send it, from an app you already use on your device, and the answer comes back there.</p>
 
 <h2>Requirements</h2>
@@ -51,6 +51,29 @@
   <li><strong>Review, then share.</strong> Check what was found in <em>Sensitive data</em>, read the whole assembled payload in <em>Preview → See the full payload</em>, then press Share and pick your destination.</li>
 </ol>
 
+<h2>Access: what is free, what is paid</h2>
+<p>There is one app, one optional purchase and <strong>no subscription</strong>. Nothing renews, nothing is charged automatically, and there is nothing to cancel. Your access status is the <strong>Access</strong> row in the Settings tab; everything below is reached from there or from the screen it opens.</p>
+
+<h3>Without a trial or a purchase</h3>
+<p>The app works, with a reduced set of features. You can type or dictate a prompt, prepare it, and share it, and everything already saved in History stays available to re-share. What a limited request does not get: <strong>attachments</strong>, <strong>system prompt patterns</strong>, the choice of <strong>share mode</strong> (it uses One shot), and the two passes that read the text out of attachments and cover what looks sensitive.</p>
+
+<h3>The free three-day trial — you start it yourself</h3>
+<p><strong>Nothing starts a trial on its own.</strong> Opening the app does not start one, and neither does looking at the purchase screen and closing it. The trial is a free item you activate with the App Store: tap <strong>Try free for 3 days</strong> in Settings and then <strong>Start 3-day trial — Free</strong>, and confirm with Apple the way you would confirm a purchase — except that it is free, nothing is charged when it ends, and there is nothing to cancel.</p>
+<p>It gives you every feature for <strong>72 hours from the moment Apple records the activation</strong>. That is wall-clock time: closing the app does not pause it. Activating needs a working connection to the App Store; once activated, the rest of the trial works offline. Because Apple holds the record rather than the app, reinstalling or setting the app up on another device <strong>keeps the same deadline</strong> instead of starting a fresh trial. Family Sharing does not pass a trial on — it applies to Full Access, below.</p>
+
+<h3>Full Access — the one-time unlock</h3>
+<p>A single purchase, made once. It is not a subscription: there is nothing to renew and nothing to cancel. <strong>We do not quote a price here</strong> — the App Store shows you the current price for your country and currency before you confirm, and that is the only number that counts. You can buy it at any time without starting a trial first.</p>
+<p>Full Access belongs to your Apple Account rather than to one iPhone, so it works on any device you sign into, it comes back after a reinstall, and it can be shared with your family if you have Family Sharing turned on.</p>
+
+<h3>Restore purchases</h3>
+<p>In Settings, under your access status. It asks the App Store again what your Apple Account owns and applies the answer. Use it after reinstalling, on a new device, or if the app has the wrong idea about your access. It is the only control that forces a fresh check, it needs a connection, and Apple may ask you to authenticate.</p>
+
+<h3>Offer codes</h3>
+<p>If you were given an Apple offer code, press and hold your access status in Settings and choose <strong>Redeem offer code</strong>. Apple's own redemption screen opens; Apple checks the code and grants the access if it qualifies. The app does not validate codes itself. If you hold an older access code from us that predates this, the Access row will say so and ask you to request a replacement.</p>
+
+<h3>Refunds</h3>
+<p>Requested from Apple, not from us. Once you have a purchase of your own, a <strong>Request a refund</strong> button appears under your status and opens Apple's own sheet. Apple decides; we have no role in approving or refusing one. If a refund is granted, the app stops seeing the purchase and returns to the reduced set of features.</p>
+
 <h2>Limits</h2>
 <div class="tablewrap">
 <table>
@@ -61,10 +84,33 @@
     <tr><td>Video or any other file</td><td>30 MB</td></tr>
     <tr><td>Recording in the app</td><td>15 seconds</td><td>Derived from the 30 MB video ceiling at high quality</td></tr>
     <tr><td>Archives (.zip, .rar, .7z, …)</td><td>Not accepted</td><td>Nothing in the app can read inside an archive, so its contents could not be checked for secrets before you shared them</td></tr>
-    <tr><td>History</td><td>20 requests / 500 MB</td><td>Oldest deleted first, so the app never grows without bound</td></tr>
+    <tr><td>PDF pages read</td><td>First 20</td><td>Pages after the twentieth are still shared as part of the file — they are simply not read, and so not scanned</td></tr>
+    <tr><td>Text file scanned for secrets</td><td>512,000 bytes</td><td>A larger text file is reported as <em>not checked</em> rather than partly checked, and is shared exactly as it is</td></tr>
+    <tr><td>Video frames examined</td><td>3,600</td><td>A backstop against a malformed file rather than a budget, but it means a long, low-bitrate clip may not be walked all the way to the end</td></tr>
+    <tr><td>History</td><td>20 requests · 500 MB of attachments</td><td>Oldest deleted first. The 500 MB counts the stored attachments themselves; the small index and text-recognition files beside them are extra, so this bounds History rather than the app's total storage</td></tr>
   </tbody>
 </table>
 </div>
+
+<h2 id="reading">What the app can read, and what it cannot</h2>
+<p>Covering a secret depends on first <strong>reading</strong> it. Anything the app could not read cannot be covered — and it is <strong>still included in what you share</strong>, exactly as it was. These are the edges worth knowing before you send something:</p>
+<ul>
+  <li><strong>Images</strong> are read whole, on your device.</li>
+  <li><strong>PDFs:</strong> the first 20 pages. A page carrying a real text layer is read from that layer, which is exact — but text that is part of a picture on such a page can be missed. Pages past the twentieth are not read at all, and they still go over with the file.</li>
+  <li><strong>Videos:</strong> reading text in videos is <strong>off by default</strong> (Settings → <em>Read text in videos</em>), because it is slow. Even switched on, the app examines at most 3,600 frames, so a long, low-bitrate clip may not be covered to its end. <strong>The sound is not examined at all</strong> — a password spoken in the audio track is shared as recorded.</li>
+  <li><strong>Text files</strong> are read and scanned up to 512,000 bytes. A larger one is reported as <em>not checked</em> rather than partly checked, and is shared in full.</li>
+  <li><strong>Anything the app cannot open</strong> is reported to you as <em>not checked</em> — never as clean.</li>
+  <li><strong>Covering something yourself</strong> by selecting it only reaches text the app actually recognised. Where nothing was recognised there is nothing to select.</li>
+  <li><strong>File names and embedded metadata</strong> are not a redaction surface. A file called <code>prod-db-password.png</code> is shared under that name. The one time a name changes is when covering something forced the picture into a different format — the copy you share is then renamed to match what it really is, so <code>screenshot.png</code> may arrive as <code>screenshot.jpeg</code>.</li>
+</ul>
+<p>The safest habit is the one the app is built around: open <em>Preview → See the full payload</em> and read what is actually going out before you press Share.</p>
+
+<h2>Known issues</h2>
+
+<h3>1m can become unresponsive after you share to another app</h3>
+<p>After handing a prepared request to another app through the share sheet, returning to 1m can leave it unresponsive. <strong>The cause is not established yet.</strong></p>
+<p>The recovery we have observed: close 1m from the app switcher — swipe up from the bottom of the screen, hold, then flick the 1m card away — and open it again.</p>
+<p>Requests that <strong>finished</strong> preparing are saved in History, so a prepared request is normally still there when you come back. A preparation that had not finished is not necessarily saved; if you do not find it, prepare it again. If this happens to you, telling us which app you shared into and what the request contained is exactly the report that would let us pin it down.</p>
 
 <h2>Questions people ask</h2>
 
@@ -72,16 +118,19 @@
 <p>No. 1m never calls an AI service itself. It prepares your request and hands it to an app on your phone through the standard iOS share sheet; that app answers using whatever plan you already have with it.</p>
 
 <h3>Where does my material actually go?</h3>
-<p>Nowhere, until you share it. The app has no server and makes no network requests of its own — capture, text recognition and redaction all run on your device. When you press Share and pick a destination, your content goes to that app, and its privacy policy applies from there. The <a href="../privacy/">privacy policy</a> sets this out in full.</p>
+<p>Nowhere, until you share it. Capture, text recognition and redaction all run on your device, and there is no server of ours, no backend, no analytics and no third-party SDK anywhere in the app. The only network activity is <strong>iOS talking to Apple on the app's behalf</strong> — the App Store for your purchase or trial, dictation where your language has no on-device model, and downloading translation assets — plus the two links and the mail draft in Settings, which open your browser or your mail app and only when you tap them. When you press Share and pick a destination, your content goes to that app, and its privacy policy applies from there. The <a href="../privacy/">privacy policy</a> sets this out in full.</p>
 
 <h3>Is the secret removal guaranteed?</h3>
-<p><strong>No, and the app says so on two screens.</strong> Text can be missed on a blurry or angled picture, a secret in an unusual shape may not be recognised, and something harmless can be covered instead. Redaction can only cover what the app could read; anything it could not open is reported as <em>not checked</em> rather than as clean. Always review before you share.</p>
+<p><strong>No, and the app says so on two screens.</strong> Text can be missed on a blurry or angled picture, a secret in an unusual shape may not be recognised, and something harmless can be covered instead. Redaction can only cover what the app could read; anything it could not open is reported as <em>not checked</em> rather than as clean, and unread content is shared as it is. See <a href="#reading">what the app can read, and what it cannot</a> above, and always review before you share.</p>
 
 <h3>Why does the app want the camera and microphone?</h3>
 <p>The camera photographs or records what you want explained. The microphone records sound while you are filming, and powers the dictation button beside your prompt. Both are optional — you can attach files and type instead — and you can withdraw either in iOS Settings at any time. The app never asks for photo library access; choosing from your library uses Apple's own picker, which shows the app only what you select.</p>
 
 <h3>Text was not read out of my video</h3>
-<p>Reading text in videos is <strong>off by default</strong>, because it is much slower than reading a still. Turn on <em>Read text in videos</em> in Settings. Be aware that a long hand-held clip can take minutes to process, since almost every frame is different and each one is read.</p>
+<p>Reading text in videos is <strong>off by default</strong>, because it is much slower than reading a still. Turn on <em>Read text in videos</em> in Settings. Two things to expect once you have: a long hand-held clip can take <strong>minutes</strong> to process, since almost every frame is different and each one is read; and the app examines at most 3,600 frames of a clip, so a long, low-bitrate recording may stop short of the end. Whatever was not read is not scanned either — but the video itself is still shared in full.</p>
+
+<h3>My purchase or trial is not recognised on this iPhone</h3>
+<p>Open Settings and press <strong>Restore purchases</strong> under your access status. That is the one control that asks the App Store again; it needs a connection, and Apple may ask you to authenticate. If the status reads <em>Limited · Not verified</em>, the App Store could not answer at all — connect to the internet and use <strong>Check again</strong>. If a trial you activated appears to have ended early, remember that the 72 hours run as wall-clock time from Apple's record of the activation, whether or not the app was open.</p>
 
 <h3>Can the answer come back in my language?</h3>
 <p>Yes. <em>Reply in the app's language</em> in Settings is on by default. When the app is set to anything other than English, an extra instruction is added asking for the response in your language — while explicitly asking that code, identifiers, class and method names, error names, log lines, commands and paths are left exactly as they are, so the answer stays searchable and pasteable.</p>
@@ -96,25 +145,40 @@
 <p>Open the ⓘ on the <em>New request</em> title line on the Main tab and tap <strong>Show the interactive introduction</strong> at the bottom.</p>
 
 <h3>Which version of the app am I on?</h3>
-<p>Open the <strong>Settings</strong> tab and look at the very bottom of the page, under <em>Access</em>. It reads something like <code>Version 1.0 (1)</code> — the first number is the release and the number in brackets is the build. Please include the whole line when you report a bug; two builds can share a release number and behave differently.</p>
+<p>Open the <strong>Settings</strong> tab and scroll to the very bottom of the page. A small grey line there reads something like <code>Version 1.0 (1)</code> — the first number is the release and the number in brackets is the build. Please include the whole line when you report a bug; two builds can share a release number and behave differently.</p>
 
-<h3>How do I delete everything the app has stored?</h3>
-<p>Settings → <strong>Clear History</strong> removes stored requests and their attachments. Deleting the app removes absolutely everything, since all of it lives inside the app's own container.</p>
+<h3>History says it needs attention</h3>
+<p>That screen appears when the small file listing your saved requests cannot be read. <strong>Nothing has been deleted</strong> — your saved requests and their attachments are left exactly as they were, and the app refuses to write anything more to History until the matter is settled. Preparing and sharing carry on working. The app keeps a small copy of the previous listing beside the current one and rebuilds from it automatically when it can, so reaching this screen means that did not work either. <strong>Try again</strong> re-reads from scratch, which is worth one press — a read can fail because the device was busy rather than because anything is wrong. <strong>Remove everything History has kept</strong> is the destructive way out and is behind a confirmation; it does not touch your settings or the system prompts you wrote.</p>
+
+<h3>What does the app remove, and when?</h3>
+<p>Four different things, and they are not removed by the same action:</p>
+<ul>
+  <li><strong>Clear History</strong> (in Settings) removes your saved requests and the copies of their attachments, including the small retained copy of the previous listing. It does <strong>not</strong> remove your settings, and it does <strong>not</strong> remove the system prompts you wrote yourself.</li>
+  <li><strong>Deleting the app</strong> removes the app's own container: History, your own system prompts, your settings, and anything still in temporary storage.</li>
+  <li><strong>What is not in that container.</strong> What you own with Apple — Full Access, and a trial once you have activated one — is held by Apple against your Apple Account, so deleting and reinstalling the app does not give you a fresh trial. One small item can also remain in the iOS Keychain: a clock marker with no personal data in it, written only once a trial has actually been activated. If you never activate a trial, the app writes nothing there at all.</li>
+  <li><strong>Your own backups.</strong> History lives in Application Support, which ordinary iCloud and encrypted local backups include. Nothing goes to us, but a copy can exist in your own backup after you have cleared History on the phone, and restoring that backup brings it back. If you would rather it did not, clear History before a backup runs, or turn this app off in your iCloud backup settings.</li>
+</ul>
 
 <h2>Reporting a bug</h2>
-<p>Email <a href="mailto:asoft.general.support@gmail.com">asoft.general.support@gmail.com</a> and include, as far as you can:</p>
+<p>Two ways, and they reach the same mailbox.</p>
+<p><strong>From inside the app:</strong> Settings → <strong>Report a problem</strong> opens a new message in your own mail app, addressed to us, with the subject carrying the app version, one sentence asking what happened, and four technical lines — app version, iOS version, device model identifier (something like <code>iPhone17,1</code>) and the language the app is set to. <strong>The app sends nothing.</strong> The message sits in your Drafts until you press send, and you can read, edit or delete any line of it first — which is precisely why those facts are written in the body rather than attached. No logs, no attachments and nothing you typed into the app are included. If no mail app answers, the address is copied to your clipboard instead. That row is part of the full feature set, so it is available during a trial or with Full Access; this page and the address on it are open to everybody.</p>
+<p><strong>Or email us directly</strong> at <a href="mailto:asoft.general.support@gmail.com">asoft.general.support@gmail.com</a> and include, as far as you can:</p>
 <ul>
-  <li>The app version, shown at the bottom of the <strong>Settings</strong> tab</li>
+  <li>The version line from the bottom of the <strong>Settings</strong> tab</li>
   <li>Your iPhone model and iOS version</li>
   <li>What you did, what you expected, and what happened instead</li>
   <li>A screenshot, if it is something you can see</li>
 </ul>
 <p><strong>Please do not send us your logs, screenshots of production systems, keys or customer data</strong> to illustrate a problem. If a bug involves a specific attachment, describe its kind and size rather than sending it. We would rather reproduce it ourselves than receive material you would not want to share.</p>
 
+<h3>What we receive when you write in</h3>
+<p>Writing to us is entirely voluntary, and nothing is sent until you press send. When you do, our mailbox receives what any email gives its recipient: <strong>the address you sent from</strong>, your subject and your message, and whichever of those four diagnostic lines you chose to leave in. Nothing else travels with it — the app has no analytics, no crash reporter and no identifier to attach.</p>
+<p>It is a personal mailbox, read by the developer. What you send is used to answer you and to fix what you reported, and for nothing else: it is not sold, not shared and not used for marketing. Messages are kept only for as long as answering you and following the problem up requires; ask us and we will delete the thread.</p>
+
 </main>
 
 <footer class="site">
-  <p><strong>1m</strong> — capture the problem, prepare the prompt, hand it over.</p>
+  <p><strong>1m: Private Prompt Composer</strong> — capture the problem, prepare the prompt, hand it over.</p>
   <p><a href="../">Overview</a> · <a href="../privacy/">Privacy Policy</a> · <a href="./">Support</a></p>
 </footer>
 
