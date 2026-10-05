@@ -23,7 +23,7 @@
 <main>
 
 <h1>Privacy Policy</h1>
-<p class="stamp">Effective 11 September 2026 · Last updated 11 September 2026 · Applies to <strong>1m: Private Prompt Composer</strong> for iPhone (<code>com.mobileproblemsolver.app</code>), version 1.0 onward.</p>
+<p class="stamp">Effective 5 October 2026 · Last updated 5 October 2026 · Applies to <strong>1m: Private Prompt Composer</strong> for iPhone (<code>com.mobileproblemsolver.app</code>), version 1.0 onward.</p>
 
 <div class="callout">
   <h2>The short version</h2>
@@ -71,7 +71,8 @@
 </table>
 </div>
 <p>The 500 MB counts the attachments themselves. The small index beside them, the text read out of them and the recovery copy described below sit outside that sum, so it bounds what History keeps rather than everything the app has on disk.</p>
-<p><strong>History stores what was shared, not what you started from.</strong> Anything you chose to hide is already covered in the copy kept on your device — painted out of the image, the PDF page or the video frame, and replaced with <code>&lt;sensitive&gt;</code> in your typed text. An attachment where you hid nothing is kept exactly as you attached it, because that is also what was shared. A request reaches History when preparation finishes, so an attempt you cancelled or that failed leaves nothing behind.</p>
+<p><strong>History stores the prepared request, including the redactions you chose.</strong> Anything you chose to hide is already covered in the saved copy — painted out of the image, the PDF page or the video frame, and replaced with <code>&lt;sensitive&gt;</code> in your typed text. An attachment where you hid nothing is kept as you attached it. A request reaches History when preparation finishes, even if you have not shared it. An attempt you cancelled or that failed does not create a completed History entry.</p>
+<p><strong>In version 1.1, new History entries also retain the complete prepared prompt and the system prompt used.</strong> Later changes to settings or templates do not rewrite those saved entries. Changes to a prepared request's redactions are saved as a separate revision. When upgrading older entries, the app preserves the content it can recover and labels the resulting prompt as reconstructed; a custom prompt deleted before the upgrade cannot be recovered. These saved prompts and attachment copies remain on your device and in any backups you make, under the same retention and deletion rules described here.</p>
 <p><strong>If History's index cannot be read</strong> — a truncated write, a damaged restore — the app does not treat that as an empty History and start writing over it. It stops, shows you a recovery screen, leaves every file exactly where it is, and refuses to write anything until the matter is settled. A small copy of the previous index is kept beside the current one, and the app rebuilds from it automatically at launch whenever that copy and the files it names are intact — so the recovery screen is what you see when even that did not work. That copy never holds a request you deleted, and Clear History removes it along with everything else.</p>
 <p><strong>Your own backups are the ordinary way this material leaves the phone.</strong> History lives in Application Support, which iOS includes in an iCloud backup and in an encrypted backup to your computer, and the app deliberately does not exclude it: a History lost with a broken phone is worse than a History riding along in a backup you already trust. Those backups are between you and Apple. We cannot see them and there is nothing in them for us to see. If you would rather History were not in them, clear History before you back up, or switch the app off in the iCloud backup list in iOS Settings.</p>
 <p><strong>Deleting the app removes its container — and two things sit outside it.</strong> iOS deletes everything in the table above along with the app: your requests, their attachments, the prompts you wrote and your settings.</p>
@@ -89,7 +90,7 @@
   <li><strong>Once you pick a destination, that app receives your content and its own privacy policy and terms govern what happens next.</strong> If the destination is a chat assistant, your material may be transmitted to and processed on that company's servers, and may be retained or used according to their policy and your settings with them.</li>
 </ul>
 <p>We have no visibility into, control over, or relationship with whatever app you choose. We are not affiliated with the makers of any destination app. <strong>Please read the privacy policy of the app you are sharing into</strong> — that is where your content actually goes.</p>
-<p>One rough edge worth knowing about, because it looks worse than it is: after handing a request over, coming back to 1m can sometimes leave it unresponsive. We have not confirmed the cause. Closing 1m from the app switcher and opening it again recovers it, and requests that finished preparing are in History — one that never finished preparing may not be.</p>
+<p>If the app becomes unresponsive after sharing, see the <a href="../support/#after-sharing">support page's recovery advice and version-specific status</a>.</p>
 
 <h2>5. Purchases, the free trial and offer codes</h2>
 <p>1m works in a reduced form with no payment at all. Two things open the rest of it: an optional free three-day trial you start yourself, and a one-time purchase. Apple handles both, so it is worth being exact about what that involves.</p>
@@ -118,7 +119,7 @@
 <h2>7. On-device processing</h2>
 <p>These features never transmit anything anywhere:</p>
 <ul class="grid">
-  <li><b>Reading text</b>Apple's Vision framework reads text out of images, PDF pages and — if you switch it on in Settings — video frames, on the device.</li>
+  <li><b>Reading text</b>PDF text layers are read directly on the device. Apple's Vision framework recognises text in images and scanned PDF pages, and — if you switch it on in Settings — video frames. Version 1.1 also recognises text in images on PDF pages that carry a text layer.</li>
   <li><b>Finding sensitive data</b>Pattern rules and Apple's NaturalLanguage framework look for secrets, emails, hosts, IP addresses, paths, card numbers and names.</li>
   <li><b>Redaction</b>Anything you leave switched on is painted into the image, PDF or video, and replaced with a marker in your text, before the file is shared.</li>
 </ul>
@@ -131,7 +132,7 @@
 <p>Redaction can only cover what the app was able to read, and there are places where the reading stops:</p>
 <ul>
   <li><strong>A PDF is read for its first 20 pages.</strong> Anything after page 20 is never read, so nothing on it can be found or covered.</li>
-  <li><strong>A PDF page that already carries text</strong> is read from that text rather than from the picture, which is exact — but words that exist only inside an image on that same page can be missed.</li>
+  <li><strong>In version 1.1, PDF text layers and images on the page are both read.</strong> Native text is read directly; text in images and scanned pages is recognised on the device and can still be missed or read incorrectly. In version 1.0, a page with a usable text layer was read from that layer alone, so words inside images on the same page could be missed.</li>
   <li><strong>Video frames are read only if you turn that on in Settings</strong>, and the walk through a clip stops after 3,600 frames, so a long recording may not be read to the end. <strong>Sound is never examined</strong>: a password spoken aloud in a recording is shared exactly as recorded.</li>
   <li><strong>A text file is scanned only if it is under 512,000 bytes.</strong> A larger one is not partly scanned — it is reported to you as <em>not checked</em>, and shared exactly as it is.</li>
   <li><strong>Marking something yourself works on the text the app managed to read.</strong> What was never read cannot be selected, and so cannot be covered.</li>
