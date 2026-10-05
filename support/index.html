@@ -23,7 +23,7 @@
 <main>
 
 <h1>Support</h1>
-<p class="stamp">For <strong>1m: Private Prompt Composer</strong> version 1.0 · Last updated 11 September 2026</p>
+<p class="stamp">For <strong>1m: Private Prompt Composer</strong> version 1.1 guidance · Last updated 5 October 2026</p>
 
 <div class="callout">
   <h2>Get in touch</h2>
@@ -34,6 +34,18 @@
 <h2>What 1m does</h2>
 <p class="lede">Point your iPhone at the logs, the code or the error in front of you. <strong>1m: Private Prompt Composer</strong> captures it, reads the text out of it, looks for what should not leave your phone and covers what it finds for you to review, builds a well-formed prompt around it, and hands the whole package to an AI app you already have — in one share or sequentially, depending on the share mode you choose.</p>
 <p>There is no API key to buy, no subscription to us for tokens, and no account to create. The app prepares the request; you send it, from an app you already use on your device, and the answer comes back there.</p>
+
+<h2 id="version-1-1">What changes in version 1.1</h2>
+<p>The changes below apply to <strong>version 1.1</strong>. If you are using an earlier version, some features will behave differently. You can <a href="#app-version">check your installed version in Settings</a>.</p>
+<ul>
+  <li><strong>Hindi joins English, Ukrainian, German and Russian.</strong> Choose your app language in Settings → Appearance → Language.</li>
+  <li><strong>PDFs with both text and pictures are read more thoroughly.</strong> The app keeps the native text and also recognises text in images on the page. Scanned pages are read too; the limit remains the first 20 pages.</li>
+  <li><strong>Name detection and text masking are improved.</strong> Detection can still miss sensitive information, so review every request before sharing it.</li>
+  <li><strong>Redaction changes made during preparation are included before Share becomes ready.</strong> The prepared request and the saved History copy use those final choices.</li>
+  <li><strong>Newly prepared History entries keep their saved prompt and files.</strong> Changing your settings or templates later does not change those entries. <a href="#saved-requests">Older entries have some limits</a>.</li>
+  <li><strong>Custom prompt templates save more reliably.</strong> If a save fails, your edits stay in the editor so you can try again.</li>
+  <li><strong>Sensitive-data checks are faster for repeated text lines.</strong> Video text recognition can still take time.</li>
+</ul>
 
 <h2>Requirements</h2>
 <ul class="grid">
@@ -96,7 +108,7 @@
 <p>Covering a secret depends on first <strong>reading</strong> it. Anything the app could not read cannot be covered — and it is <strong>still included in what you share</strong>, exactly as it was. These are the edges worth knowing before you send something:</p>
 <ul>
   <li><strong>Images</strong> are read whole, on your device.</li>
-  <li><strong>PDFs:</strong> the first 20 pages. A page carrying a real text layer is read from that layer, which is exact — but text that is part of a picture on such a page can be missed. Pages past the twentieth are not read at all, and they still go over with the file.</li>
+  <li><strong>PDFs:</strong> the first 20 pages. In version 1.1, the app reads a page's text layer directly and also recognises text in images on that page; scanned pages use text recognition too. Recognition can still miss text. In version 1.0, a page with a usable text layer was read from that layer alone, so text inside pictures on the same page could be missed. Pages past the twentieth are not read at all, and they still go over with the file.</li>
   <li><strong>Videos:</strong> reading text in videos is <strong>off by default</strong> (Settings → <em>Read text in videos</em>), because it is slow. Even switched on, the app examines at most 3,600 frames, so a long, low-bitrate clip may not be covered to its end. <strong>The sound is not examined at all</strong> — a password spoken in the audio track is shared as recorded.</li>
   <li><strong>Text files</strong> are read and scanned up to 512,000 bytes. A larger one is reported as <em>not checked</em> rather than partly checked, and is shared in full.</li>
   <li><strong>Anything the app cannot open</strong> is reported to you as <em>not checked</em> — never as clean.</li>
@@ -107,10 +119,10 @@
 
 <h2>Known issues</h2>
 
-<h3>1m can become unresponsive after you share to another app</h3>
-<p>After handing a prepared request to another app through the share sheet, returning to 1m can leave it unresponsive. <strong>The cause is not established yet.</strong></p>
+<h3 id="after-sharing">If 1m becomes unresponsive after sharing</h3>
+<p>This was reported before version 1.1: after handing a prepared request to another app through the share sheet, returning to 1m could leave it unresponsive. <strong>The cause is not established, and a fix has not been verified for version 1.1.</strong> The recovery advice below remains available if you encounter it.</p>
 <p>The recovery we have observed: close 1m from the app switcher — swipe up from the bottom of the screen, hold, then flick the 1m card away — and open it again.</p>
-<p>Requests that <strong>finished</strong> preparing are saved in History, so a prepared request is normally still there when you come back. A preparation that had not finished is not necessarily saved; if you do not find it, prepare it again. If this happens to you, telling us which app you shared into and what the request contained is exactly the report that would let us pin it down.</p>
+<p>Requests that <strong>finished</strong> preparing are saved in History, so a prepared request is normally still there when you come back. A preparation that had not finished is not necessarily saved; if you do not find it, prepare it again. If this happens to you, telling us your 1m and iOS versions, which app you shared into, and the types and sizes of attachments is exactly the report that would let us pin it down.</p>
 
 <h2>Questions people ask</h2>
 
@@ -136,7 +148,7 @@
 <p>Yes. <em>Reply in the app's language</em> in Settings is on by default. When the app is set to anything other than English, an extra instruction is added asking for the response in your language — while explicitly asking that code, identifiers, class and method names, error names, log lines, commands and paths are left exactly as they are, so the answer stays searchable and pasteable.</p>
 
 <h3>What languages does the app support?</h3>
-<p>English, Ukrainian, German and Russian, chosen in Settings → Appearance → Language. The three permission dialogs are drawn by iOS itself and follow your phone's language rather than this setting.</p>
+<p>Version 1.1 supports <strong>English, Ukrainian, German, Russian and Hindi (हिन्दी)</strong>. Choose in <strong>Settings → Appearance → Language</strong>, independently of your iPhone's language. Version 1.0 supports the first four. Permission dialogs are drawn by iOS itself and follow your phone's language rather than the language selected inside 1m.</p>
 
 <h3>Dictation is not working</h3>
 <p>Hold the microphone button down — it records for as long as your finger is on it and stops when you lift it. It is not a tap-to-toggle button. Also check that microphone and speech recognition permissions are granted in iOS Settings.</p>
@@ -144,8 +156,12 @@
 <h3>How do I see the introduction again?</h3>
 <p>Open the ⓘ on the <em>New request</em> title line on the Main tab and tap <strong>Show the interactive introduction</strong> at the bottom.</p>
 
-<h3>Which version of the app am I on?</h3>
-<p>Open the <strong>Settings</strong> tab and scroll to the very bottom of the page. A small grey line there reads something like <code>Version 1.0 (1)</code> — the first number is the release and the number in brackets is the build. Please include the whole line when you report a bug; two builds can share a release number and behave differently.</p>
+<h3 id="app-version">Which version of the app am I on?</h3>
+<p>Open the <strong>Settings</strong> tab and look near the bottom of the page, below the support and privacy links. A small grey line there reads something like <code>Version 1.1 (5)</code> — the first number is the release and the number in brackets is the build. Please include the whole line when you report a bug; two builds can share a release number and behave differently.</p>
+
+<h3 id="saved-requests">Does changing a template change my saved requests?</h3>
+<p>For requests prepared in <strong>version 1.1</strong>, no. History keeps the prepared prompt and attachment copies as they were when saved. Changing your language, settings or custom templates later does not rewrite those entries. If you change redactions after a request has been prepared, the updated request is saved separately.</p>
+<p>Requests saved by older versions did not retain the complete original prompt. On upgrade, 1m preserves what it can recover and labels these entries as <strong>reconstructed</strong>. A custom prompt deleted before the upgrade cannot be recovered. Check the preview before re-sharing an older request.</p>
 
 <h3>History says it needs attention</h3>
 <p>That screen appears when the small file listing your saved requests cannot be read. <strong>Nothing has been deleted</strong> — your saved requests and their attachments are left exactly as they were, and the app refuses to write anything more to History until the matter is settled. Preparing and sharing carry on working. The app keeps a small copy of the previous listing beside the current one and rebuilds from it automatically when it can, so reaching this screen means that did not work either. <strong>Try again</strong> re-reads from scratch, which is worth one press — a read can fail because the device was busy rather than because anything is wrong. <strong>Remove everything History has kept</strong> is the destructive way out and is behind a confirmation; it does not touch your settings or the system prompts you wrote.</p>
@@ -164,7 +180,7 @@
 <p><strong>From inside the app:</strong> Settings → <strong>Report a problem</strong> opens a new message in your own mail app, addressed to us, with the subject carrying the app version, one sentence asking what happened, and four technical lines — app version, iOS version, device model identifier (something like <code>iPhone17,1</code>) and the language the app is set to. <strong>The app sends nothing.</strong> The message sits in your Drafts until you press send, and you can read, edit or delete any line of it first — which is precisely why those facts are written in the body rather than attached. No logs, no attachments and nothing you typed into the app are included. If no mail app answers, the address is copied to your clipboard instead. That row is part of the full feature set, so it is available during a trial or with Full Access; this page and the address on it are open to everybody.</p>
 <p><strong>Or email us directly</strong> at <a href="mailto:asoft.general.support@gmail.com">asoft.general.support@gmail.com</a> and include, as far as you can:</p>
 <ul>
-  <li>The version line from the bottom of the <strong>Settings</strong> tab</li>
+  <li>The version line near the bottom of the <strong>Settings</strong> tab</li>
   <li>Your iPhone model and iOS version</li>
   <li>What you did, what you expected, and what happened instead</li>
   <li>A screenshot, if it is something you can see</li>
